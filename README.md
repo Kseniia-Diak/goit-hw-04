@@ -37,7 +37,7 @@ This project is part of the **GoIT Fullstack Development Course**. The goal is t
 - Filter buttons (on the Portfolio page) have a shadow effect on hover and focus.
 - On hover or focus, icons change to their active state (e.g., color change), if specified in the design.
 
-## Technologies Used
+## 🔧 Technologies Used
 
 - **HTML5** for markup
 - **Prettier** for code formatting
