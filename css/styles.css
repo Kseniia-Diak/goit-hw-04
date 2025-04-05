@@ -144,33 +144,63 @@ ul {
   color: var(--accent-color);
 }
 
-.header-contacts-wrapper {
-  display: flex;
-  gap: 30px;
-}
-
 .link.current {
   color: var(--accent-color);
 }
+
 /* contacts */
-.contacts {
-  padding-top: 20px;
-  padding-bottom: 20px;
+
+.header-contacts-wrapper {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+.header-contacts-item {
+  display: flex;
+  gap: 10px;
+  align-items: center;
 
   font-weight: 500;
   letter-spacing: 0.02em;
 }
-.contacts:hover,
-.contacts:focus {
+
+.contacts-link {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.contacts-link:hover,
+.contacts-link:focus {
   color: var(--accent-color);
+}
+
+.header-contacts-icon {
+  width: 16px;
+  height: 16px;
+  fill: currentColor;
 }
 
 /* hero */
 .hero {
+  margin-right: auto;
+  margin-left: auto;
   padding-top: 200px;
   padding-bottom: 200px;
   text-align: center;
-  background: #2f303a;
+  background: #c4c4c4;
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/hero-bg.jpg);
+  max-width: 1600px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .hero-title {
@@ -215,8 +245,19 @@ ul {
 } */
 
 .benefits-pic {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-bottom: 30px;
+  width: 270px;
+  height: 120px;
+  background-color: var(--lightest-gray-color);
+  border-radius: 4px;
+}
+
+.benefits-icon {
+  width: 70px;
+  height: 70px;
 }
 
 .benefits-title {
@@ -303,13 +344,40 @@ ul {
 .socials-list {
   display: flex;
   column-gap: 10px;
-  justify-content: center;
 }
 
 .socials-item {
   width: 44px;
   height: 44px;
-  background-color: var(--gray-color);
+}
+
+.social-link {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--primary-white-color);
+  border-radius: 50%;
+}
+
+.social-link:hover,
+.social-link:focus {
+  background-color: var(--accent-color);
+}
+
+.social-link-icon {
+  width: 20px;
+  height: 20px;
+  fill: var(--gray-color);
+}
+
+.social-link:hover .social-link-icon {
+  fill: var(--primary-white-color);
+}
+
+.social-link:focus .social-link-icon {
+  fill: var(--primary-white-color);
 }
 
 /* clients */
@@ -325,11 +393,30 @@ ul {
 
 .clients-item {
   width: 170px;
-  /* height: 92px; */
+  height: 92px;
 }
 
-.clients-pic {
-  display: block;
+.clients-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  color: #afb1b8;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+}
+
+.clients-icon {
+  width: 106px;
+  height: 60px;
+  fill: currentColor;
+}
+
+.clients-link:hover,
+.clients-link:focus {
+  color: var(--accent-color);
+  border-color: var(--accent-color);
 }
 
 /* footer */
@@ -341,7 +428,7 @@ ul {
 
 .footer-container {
   display: flex;
-  /* align-items: center; */
+  align-items: baseline;
 }
 
 .footer-nav {
@@ -406,7 +493,28 @@ ul {
 .follow-item {
   width: 44px;
   height: 44px;
-  background-color: var(--gray-color);
+}
+
+.footer-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  color: var(--primary-white-color);
+}
+
+.footer-icon {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+}
+
+.footer-link:hover,
+.footer-link:focus {
+  background-color: var(--accent-color);
 }
 
 /* portfolio page styles */
@@ -438,6 +546,8 @@ ul {
 .portfolio-button:hover,
 .portfolio-button:focus {
   background-color: var(--accent-color);
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.12), 0 1px 2px 0 rgba(0, 0, 0, 0.08),
+    0 3px 1px 0 rgba(0, 0, 0, 0.1);
   color: var(--primary-white-color);
 }
 
@@ -454,7 +564,17 @@ ul {
 
 .cards-item {
   width: 370px;
-  /* height: 404px; */
+}
+
+.cards-link {
+  display: block;
+}
+
+.cards-link:hover,
+.cards-link:focus {
+  width: 100%;
+  box-shadow: 1px 4px 6px 0 rgba(0, 0, 0, 0.16), 0 4px 4px 0 rgba(0, 0, 0, 0.06),
+    0 1px 1px 0 rgba(0, 0, 0, 0.12);
 }
 
 .carts-pic {

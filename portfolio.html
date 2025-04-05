@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -29,23 +29,28 @@
           >
           <ul class="site-nav">
             <li class="site-nav-item">
-              <a href="./index.html" class="link">Studio</a>
+              <a href="./index.html" class="link">Студія</a>
             </li>
             <li class="site-nav-item">
-              <a href="./portfolio.html" class="link current">Portfolio</a>
+              <a href="./portfolio.html" class="link current">Портфоліо</a>
             </li>
-            <li class="site-nav-item"><a href="" class="link">Contacts</a></li>
+            <li class="site-nav-item"><a href="" class="link">Контакти</a></li>
           </ul>
         </nav>
 
         <ul class="header-contacts-wrapper">
-          <li>
-            <a href="mailto:info@devstudio.com" class="link contacts"
-              >info@devstudio.com</a
+          <li class="header-contacts-item">
+            <a href="mailto:info@devstudio.com" class="link contacts-link">
+              <svg class="header-contacts-icon">
+                <use href="./images/icons.svg#icon-envelope"></use>
+              </svg>
+              info@devstudio.com</a
             >
           </li>
-          <li>
-            <a href="tel:+380961111111" class="link contacts"
+          <li class="header-contacts-item">
+            <a href="tel:+380961111111" class="link contacts-link">
+              <svg class="header-contacts-icon">
+                <use href="./images/icons.svg#icon-smartphone"></use></svg
               >+38 096 111 11 11</a
             >
           </li>
@@ -57,170 +62,168 @@
     <main>
       <section class="portfolio">
         <div class="container">
-          <h1 class="visually-hidden">Portfolio</h1>
+          <h1 class="visually-hidden">Портфоліо</h1>
           <ul class="list button-list">
             <li>
               <button type="button" class="button portfolio-button accent">
-                All
+                Усі
               </button>
             </li>
             <li>
               <button type="button" class="button portfolio-button">
-                Websites
+                Веб-сайти
               </button>
             </li>
             <li>
               <button type="button" class="button portfolio-button">
-                Apps
+                Додатки
               </button>
             </li>
             <li>
               <button type="button" class="button portfolio-button">
-                Design
+                Дизайн
               </button>
             </li>
             <li>
               <button type="button" class="button portfolio-button">
-                Marketing
+                Маркетинг
               </button>
             </li>
           </ul>
           <!-- portfolio cards -->
           <ul class="list cards-list">
             <li class="cards-item">
-              <a class="link"
+              <a class="link cards-link" href=""
                 ><img
                   class="carts-pic"
                   src="./images/portfolio-1.jpg"
-                  alt="Website"
+                  alt="Ресторан"
                   width="370"
                   height="294"
                 />
                 <div class="cards-content">
-                  <h2 class="portfolio-title">TechnoQuack</h2>
-                  <p class="portfolio-subtitle">Website</p>
+                  <h2 class="portfolio-title">Ресторан Seafood</h2>
+                  <p class="portfolio-subtitle">Додаток</p>
                 </div>
               </a>
             </li>
             <li class="cards-item">
-              <a class="link"
+              <a class="link cards-link" href=""
                 ><img
                   class="carts-pic"
                   src="./images/portfolio-2.jpg"
-                  alt="Poster"
+                  alt="Ресторан"
                   width="370"
                   height="294"
                 />
                 <div class="cards-content">
-                  <h2 class="portfolio-title">
-                    Poster New Orlean vs Golden Star
-                  </h2>
-                  <p class="portfolio-subtitle">Design</p>
+                  <h2 class="portfolio-title">Ресторан Seafood</h2>
+                  <p class="portfolio-subtitle">Додаток</p>
                 </div>
               </a>
             </li>
             <li class="cards-item">
-              <a class="link" href=""
+              <a class="link cards-link" href=""
                 ><img
                   class="carts-pic"
                   src="./images/portfolio-3.jpg"
-                  alt="Restaurant"
+                  alt="Ресторан"
                   width="370"
                   height="294"
                 />
                 <div class="cards-content">
-                  <h2 class="portfolio-title">Seafood Restaurant</h2>
-                  <p class="portfolio-subtitle">App</p>
+                  <h2 class="portfolio-title">Ресторан Seafood</h2>
+                  <p class="portfolio-subtitle">Додаток</p>
                 </div>
               </a>
             </li>
             <li class="cards-item">
-              <a class="link" href=""
+              <a class="link cards-link" href=""
                 ><img
                   class="carts-pic"
                   src="./images/portfolio-4.jpg"
-                  alt="Headphones"
+                  alt="Навушники"
                   width="370"
                   height="294"
                 />
                 <div class="cards-content">
-                  <h2 class="portfolio-title">Project Prime</h2>
-                  <p class="portfolio-subtitle">Marketing</p>
+                  <h2 class="portfolio-title">Проєкт Prime</h2>
+                  <p class="portfolio-subtitle">Маркетинг</p>
                 </div>
               </a>
             </li>
             <li class="cards-item">
-              <a class="link" href=""
+              <a class="link cards-link" href=""
                 ><img
                   class="carts-pic"
                   src="./images/portfolio-5.jpg"
-                  alt="Boxes"
+                  alt="Коробки"
                   width="370"
                   height="294"
                 />
                 <div class="cards-content">
-                  <h2 class="portfolio-title">Project Boxes</h2>
-                  <p class="portfolio-subtitle">App</p>
+                  <h2 class="portfolio-title">Проєкт Boxes</h2>
+                  <p class="portfolio-subtitle">Додаток</p>
                 </div>
               </a>
             </li>
             <li class="cards-item">
-              <a class="link" href=""
+              <a class="link cards-link" href=""
                 ><img
                   class="carts-pic"
                   src="./images/portfolio-6.jpg"
-                  alt="Website"
+                  alt="Веб-сайт"
                   width="370"
                   height="294"
                 />
                 <div class="cards-content">
                   <h2 class="portfolio-title">Inspiration has no Borders</h2>
-                  <p class="portfolio-subtitle">Website</p>
+                  <p class="portfolio-subtitle">Веб-сайт</p>
                 </div>
               </a>
             </li>
             <li class="cards-item">
-              <a class="link" href=""
+              <a class="link cards-link" href=""
                 ><img
                   class="carts-pic"
                   src="./images/portfolio-7.jpg"
-                  alt="Publication"
+                  alt="Издание"
                   width="370"
                   height="294"
                 />
                 <div class="cards-content">
-                  <h2 class="portfolio-title">Limited Edition Publication</h2>
-                  <p class="portfolio-subtitle">Design</p>
+                  <h2 class="portfolio-title">Видання Limited Edition</h2>
+                  <p class="portfolio-subtitle">Дизайн</p>
                 </div>
               </a>
             </li>
             <li class="cards-item">
-              <a class="link" href=""
+              <a class="link cards-link" href=""
                 ><img
                   class="carts-pic"
                   src="./images/portfolio-8.jpg"
-                  alt="Label"
+                  alt="Етикетка"
                   width="370"
                   height="294"
                 />
                 <div class="cards-content">
-                  <h2 class="portfolio-title">Project LAB</h2>
-                  <p class="portfolio-subtitle">Marketing</p>
+                  <h2 class="portfolio-title">Проєкт LAB</h2>
+                  <p class="portfolio-subtitle">Маркетинг</p>
                 </div>
               </a>
             </li>
             <li class="cards-item">
-              <a class="link" href=""
+              <a class="link cards-link" href=""
                 ><img
                   class="carts-pic"
                   src="./images/portfolio-9.jpg"
-                  alt="Business App"
+                  alt="Бшзнес додаток"
                   width="370"
                   height="294"
                 />
                 <div class="cards-content">
                   <h2 class="portfolio-title">Growing Business</h2>
-                  <p class="portfolio-subtitle">App</p>
+                  <p class="portfolio-subtitle">Додаток</p>
                 </div>
               </a>
             </li>
@@ -237,6 +240,7 @@
             ><span class="accent">Web</span>Studio</a
           >
           <address class="address">
+            <!-- address list -->
             <ul class="address-list">
               <li class="address-item">
                 <a
@@ -244,7 +248,7 @@
                   target="_blank"
                   rel="nofollow noreferrer noopener"
                   class="link address-map"
-                  >Kyiv, Lesi Ukrainky Blvd, 26</a
+                  >м. Київ, пр-т Лесі Українки, 26</a
                 >
               </li>
               <li class="address-item">
@@ -262,12 +266,56 @@
         </div>
 
         <div class="follow-container">
-          <p class="follow-title">Join Us</p>
+          <p class="follow-title">приєднуйтесь</p>
           <ul class="footer-follow-list">
-            <li class="follow-item"></li>
-            <li class="follow-item"></li>
-            <li class="follow-item"></li>
-            <li class="follow-item"></li>
+            <li class="follow-item">
+              <a
+                href=""
+                class="footer-link"
+                target="_blank"
+                rel="noopener noreferrer nofollow"
+              >
+                <svg class="footer-icon">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="follow-item">
+              <a
+                href=""
+                class="footer-link"
+                target="_blank"
+                rel="noopener noreferrer nofollow"
+              >
+                <svg class="footer-icon">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="follow-item">
+              <a
+                href=""
+                class="footer-link"
+                target="_blank"
+                rel="noopener noreferrer nofollow"
+              >
+                <svg class="footer-icon">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="follow-item">
+              <a
+                href=""
+                class="footer-link"
+                target="_blank"
+                rel="noopener noreferrer nofollow"
+              >
+                <svg class="footer-icon">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
           </ul>
         </div>
       </div>
